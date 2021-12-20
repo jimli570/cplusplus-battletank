@@ -1,0 +1,62 @@
+
+
+	//std::vector<unsigned char> newGridState;
+	//std::string shipHashStirng, positionHashString;
+
+	//std::string newFullHashString, newCurrentHashString;
+	//size_t newFullHashValue, newCurrentHashValue;
+
+	//unsigned char col, row;
+	//unsigned char currentShipIndex = 0;
+	//// Go through each ship
+	//for (const auto& shipAndIndex : allShipsToTest) {
+	//	// If ship already placed, then skip
+	//	if (placedShips.find(shipAndIndex.second) != placedShips.end()) {
+	//		break;
+	//	}
+
+	//	shipHashStirng += "-" + shipAndIndex.first.getWidth();
+	//	shipHashStirng += "-" + shipAndIndex.first.getHeight();
+
+	//	// Cache current & total! (TODO);
+
+	//	// Keep count of col, row
+	//	col = 0, row = 0;
+
+	//	for (unsigned char matrisPos = 0; matrisPos < numOfPositions; ++matrisPos) {
+	//		positionHashString = std::to_string(matrisPos);
+
+	//		// Find if total hash is cached
+	//		newCurrentHashString = shipHashStirng + "-" + positionHashString;
+	//		newFullHashString = parentHashString + "-" + newCurrentHashString;
+
+	//		newFullHashValue = getHash(newFullHashString);
+	//		newCurrentHashValue = getHash(newCurrentHashString);
+
+	//		newGridState = parentGridState;
+
+	//		if (tryPlaceShip(col, row, gridSideSize, newGridState, shipAndIndex.first))
+	//		{
+	//			numOfLeaves += dfs(false, matrisPos, numOfUniqueShips, gridSideSize, shipAndIndex.second, currentShipIndex, newFullHashString,
+	//				lookupCache, placedShips, allShipsToTest, newGridState);
+	//		}
+
+	//		bool rowChange = ((col + 1) >= gridSideSize);
+	//		// Update row & col position
+	//		if (rowChange) { col = 0; row += 1; }
+	//		else { ++col; }
+	//	}
+
+	//	++currentShipIndex;
+	//}
+
+
+
+
+
+
+
+	
+		size_t getHashValue() const {
+			return std::hash<std::string>() (std::string(m_grid.cbegin(), m_grid.cend()));
+		}
