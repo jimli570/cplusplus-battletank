@@ -9,7 +9,7 @@ namespace mygame {
 	public: 
 		Ship() = delete;
 		Ship(unsigned char width, unsigned char height);
-		virtual ~Ship() = default;
+		~Ship() override = default;
 		Ship(const Ship &) = default;
 		Ship(Ship &&) = default;
 		Ship &operator=(const Ship &) = default;

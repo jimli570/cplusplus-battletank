@@ -17,7 +17,7 @@ namespace mygame {
 
 	public:
 		GameAnalyzer() = default;
-		virtual ~GameAnalyzer() = default;
+		~GameAnalyzer() override = default;
 		GameAnalyzer(const GameAnalyzer &) = default;
 		GameAnalyzer(GameAnalyzer &&) = default;
 		GameAnalyzer &operator=(const GameAnalyzer &) = default;

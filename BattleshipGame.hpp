@@ -11,7 +11,7 @@ class BattleShipGame final : public IGame {
  public:
   BattleShipGame() = delete;
   BattleShipGame(std::shared_ptr<IPlayer> opponent);
-  virtual ~BattleShipGame() = default;
+  ~BattleShipGame() override = default;
   BattleShipGame(const BattleShipGame & ) = default;
   BattleShipGame( BattleShipGame && ) = default;
   BattleShipGame &operator=( const BattleShipGame & ) = default;

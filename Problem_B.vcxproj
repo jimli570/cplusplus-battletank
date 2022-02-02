@@ -159,9 +159,6 @@
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Problem_B.rc" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
     <None Include="Problem_B_sample_data\battleship-0000.ans" />

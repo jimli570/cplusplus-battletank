@@ -9,7 +9,7 @@ namespace mygame {
 		GameBoard() = delete;
 		GameBoard(unsigned char sideSize);
 		GameBoard(const std::vector<unsigned char>& fullGrid, unsigned char sideSize);
-		virtual ~GameBoard() = default;
+		~GameBoard() override = default;
 		GameBoard(const GameBoard &) = default;
 		GameBoard(GameBoard &&) = default;
 		GameBoard &operator=(const GameBoard &) = default;

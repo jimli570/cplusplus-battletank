@@ -8,7 +8,7 @@ namespace mygame {
 	public:
 		Player() = delete;
 		Player(std::shared_ptr< IGameBoard > gameBoard);
-		virtual ~Player() = default;
+		~Player() override  = default;
 		Player(const Player &) = default;
 		Player(Player &&) = default;
 		Player &operator=(const Player &) = default;
