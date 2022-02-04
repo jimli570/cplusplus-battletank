@@ -13,7 +13,7 @@ namespace problem_b {
 	public:
 		BattleShipGame() = delete;
 		BattleShipGame(std::shared_ptr< problem_b::IGameBoard > gameBoard);
-		virtual ~BattleShipGame() = default;
+		~BattleShipGame() override = default;
 		BattleShipGame(BattleShipGame &) = default;
 		BattleShipGame(BattleShipGame &&) = default;
 		BattleShipGame &operator=(const BattleShipGame &) = default;

@@ -15,7 +15,7 @@ namespace mygame {
 		GameBoard &operator=(const GameBoard &) = default;
 		GameBoard &operator=(GameBoard &&) = default;
 
-		virtual std::unique_ptr<IGameBoard> clone() const override;
+		std::unique_ptr<IGameBoard> clone() const override;
 
 	protected:
 	private:

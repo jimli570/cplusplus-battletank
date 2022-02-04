@@ -14,7 +14,7 @@ namespace mygame {
 		Player &operator=(const Player &) = default;
 		Player &operator=(Player &&) = default;
 
-		virtual std::unique_ptr<IPlayer> clone() const override;
+		std::unique_ptr<IPlayer> clone() const override;
 	protected:
 	private:
 	};
